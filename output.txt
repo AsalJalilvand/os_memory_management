@@ -1,0 +1,199 @@
+TLB Size : 4
+Frame Count = 4
+Page Count = 6
+----------------------------------------------------------------------
+Logical address [0,0] requested.
+Page not found in TLB.
+Page not found in page table.
+Adding new page to memory...
+Main memory : [0] [-1] [-1] [-1] 
+Set reference bit of page 0 to 1.
+Second Chance list [page,page class]: [0,2] 
+Update page table for new allocated frame.
+Page table : [0] [-1] [-1] [-1] [-1] [-1] 
+TLB Updating...
+TLB [page,frame] : [0|0] 
+----------------------------------------------------------------------
+Restarting last request.
+Page found in TLB.
+Set reference bit of page 0 to 1.
+Second Chance list [page,page class]: [0,2] 
+Physical address [0,0].
+----------------------------------------------------------------------
+Logical address [1,0] requested.
+Page not found in TLB.
+Page not found in page table.
+Adding new page to memory...
+Main memory : [0] [1] [-1] [-1] 
+Set reference bit of page 1 to 1.
+Second Chance list [page,page class]: [0,2] [1,2] 
+Update page table for new allocated frame.
+Page table : [0] [1] [-1] [-1] [-1] [-1] 
+TLB Updating...
+TLB [page,frame] : [0|0] [1|1] 
+----------------------------------------------------------------------
+Restarting last request.
+Page found in TLB.
+Set reference bit of page 1 to 1.
+Second Chance list [page,page class]: [0,2] [1,2] 
+Physical address [1,0].
+----------------------------------------------------------------------
+Logical address [2,0] requested.
+Page not found in TLB.
+Page not found in page table.
+Adding new page to memory...
+Main memory : [0] [1] [2] [-1] 
+Set reference bit of page 2 to 1.
+Second Chance list [page,page class]: [0,2] [1,2] [2,2] 
+Update page table for new allocated frame.
+Page table : [0] [1] [2] [-1] [-1] [-1] 
+TLB Updating...
+TLB [page,frame] : [0|0] [1|1] [2|2] 
+----------------------------------------------------------------------
+Restarting last request.
+Page found in TLB.
+Set reference bit of page 2 to 1.
+Second Chance list [page,page class]: [0,2] [1,2] [2,2] 
+Physical address [2,0].
+----------------------------------------------------------------------
+Logical address [3,0] requested.
+Page not found in TLB.
+Page not found in page table.
+Adding new page to memory...
+Main memory : [0] [1] [2] [3] 
+Set reference bit of page 3 to 1.
+Second Chance list [page,page class]: [0,2] [1,2] [2,2] [3,2] 
+Update page table for new allocated frame.
+Page table : [0] [1] [2] [3] [-1] [-1] 
+TLB Updating...
+TLB [page,frame] : [0|0] [1|1] [2|2] [3|3] 
+----------------------------------------------------------------------
+Restarting last request.
+Page found in TLB.
+Set reference bit of page 3 to 1.
+Second Chance list [page,page class]: [0,2] [1,2] [2,2] [3,2] 
+Physical address [3,0].
+----------------------------------------------------------------------
+Logical address [2,0] requested.
+Page found in TLB.
+Set reference bit of page 2 to 1.
+Second Chance list [page,page class]: [0,2] [1,2] [2,2] [3,2] 
+Physical address [2,0].
+----------------------------------------------------------------------
+Logical address [0,0] requested.
+Page found in TLB.
+Set modify bit of page 0 to 1.
+Second Chance list [page,page class]: [0,3] [1,2] [2,2] [3,2] 
+Physical address [0,0].
+----------------------------------------------------------------------
+Logical address [3,0] requested.
+Page found in TLB.
+Set reference bit of page 3 to 1.
+Second Chance list [page,page class]: [0,3] [1,2] [2,2] [3,2] 
+Physical address [3,0].
+----------------------------------------------------------------------
+Logical address [1,0] requested.
+Page found in TLB.
+Set modify bit of page 1 to 1.
+Second Chance list [page,page class]: [0,3] [1,3] [2,2] [3,2] 
+Physical address [1,0].
+----------------------------------------------------------------------
+Logical address [4,0] requested.
+Page not found in TLB.
+Page not found in page table.
+Memory Full!!!!!!!!!!!!!
+Page 2 in frame 2 swapped out.
+Page 4 swapped in frame 2.
+Main memory : [0] [1] [4] [3] 
+Update page table for removed page from main memory.
+Page table : [0] [1] [-1] [3] [-1] [-1] 
+Set reference bit of page 4 to 1.
+Second Chance list [page,page class]: [0,0] [1,0] [3,0] [4,2] 
+Update page table for new allocated frame.
+Page table : [0] [1] [-1] [3] [2] [-1] 
+TLB Updating...
+Entry for page 0 removed from TLB.
+Entry for page 4 added to TLB.
+TLB [page,frame] : [1|1] [2|2] [3|3] [4|2] 
+----------------------------------------------------------------------
+Restarting last request.
+Page found in TLB.
+Set reference bit of page 4 to 1.
+Second Chance list [page,page class]: [0,0] [1,0] [3,0] [4,2] 
+Physical address [2,0].
+----------------------------------------------------------------------
+Logical address [1,0] requested.
+Page found in TLB.
+Set reference bit of page 1 to 1.
+Second Chance list [page,page class]: [0,0] [1,2] [3,0] [4,2] 
+Physical address [1,0].
+----------------------------------------------------------------------
+Logical address [0,0] requested.
+Page not found in TLB.
+Page found in page table.
+TLB Updating...
+Entry for page 1 removed from TLB.
+Entry for page 0 added to TLB.
+TLB [page,frame] : [0|0] [2|2] [3|3] [4|2] 
+Set modify bit of page 0 to 1.
+Second Chance list [page,page class]: [0,1] [1,2] [3,0] [4,2] 
+Physical address [0,0].
+----------------------------------------------------------------------
+Logical address [1,0] requested.
+Page not found in TLB.
+Page found in page table.
+TLB Updating...
+Entry for page 2 removed from TLB.
+Entry for page 1 added to TLB.
+TLB [page,frame] : [0|0] [1|1] [3|3] [4|2] 
+Set reference bit of page 1 to 1.
+Second Chance list [page,page class]: [0,1] [1,2] [3,0] [4,2] 
+Physical address [1,0].
+----------------------------------------------------------------------
+Logical address [2,0] requested.
+Page not found in TLB.
+Page not found in page table.
+Memory Full!!!!!!!!!!!!!
+Page 3 in frame 3 swapped out.
+Page 2 swapped in frame 3.
+Main memory : [0] [1] [4] [2] 
+Update page table for removed page from main memory.
+Page table : [0] [1] [-1] [-1] [2] [-1] 
+Set reference bit of page 2 to 1.
+Second Chance list [page,page class]: [0,0] [1,1] [4,2] [2,2] 
+Update page table for new allocated frame.
+Page table : [0] [1] [3] [-1] [2] [-1] 
+TLB Updating...
+Entry for page 3 removed from TLB.
+Entry for page 2 added to TLB.
+TLB [page,frame] : [0|0] [1|1] [2|3] [4|2] 
+----------------------------------------------------------------------
+Restarting last request.
+Page found in TLB.
+Set reference bit of page 2 to 1.
+Second Chance list [page,page class]: [0,0] [1,1] [4,2] [2,2] 
+Physical address [3,0].
+----------------------------------------------------------------------
+Logical address [3,0] requested.
+Page not found in TLB.
+Page not found in page table.
+Memory Full!!!!!!!!!!!!!
+Page 0 in frame 0 swapped out.
+Page 3 swapped in frame 0.
+Main memory : [3] [1] [4] [2] 
+Update page table for removed page from main memory.
+Page table : [-1] [1] [3] [-1] [2] [-1] 
+Set reference bit of page 3 to 1.
+Second Chance list [page,page class]: [1,1] [4,2] [2,2] [3,2] 
+Update page table for new allocated frame.
+Page table : [-1] [1] [3] [0] [2] [-1] 
+TLB Updating...
+Entry for page 2 removed from TLB.
+Entry for page 3 added to TLB.
+TLB [page,frame] : [0|0] [1|1] [3|0] [4|2] 
+----------------------------------------------------------------------
+Restarting last request.
+Page found in TLB.
+Set reference bit of page 3 to 1.
+Second Chance list [page,page class]: [1,1] [4,2] [2,2] [3,2] 
+Physical address [0,0].
